@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Image Gallery - Grid</title>
+  <style>
+    .gallery-container {
+      width: 900px;
+      margin: 50px auto;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+    }
+    .gallery-container img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border: 2px solid #ccc;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    .gallery-container div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="gallery-container">
+    <div><img src="https://img.freepik.com/premium-photo/little-bird-sitting-branch-forest-colorful-flowers-green-leaves-foreground-soft-sunlight-shining-through-trees_36682-34043.jpg" alt="Gallery"/></div>
+    <div><img src="https://static.vecteezy.com/system/resources/thumbnails/049/201/490/small/colorful-birds-perched-on-branches-surrounded-by-lush-greenery-during-a-golden-hour-in-nature-photo.jpeg" alt="Gallery"/></div>
+    <div><img src="https://static.vecteezy.com/system/resources/thumbnails/049/201/487/small_2x/a-colorful-array-of-birds-perched-on-a-branch-surrounded-by-lush-green-foliage-in-a-serene-natural-setting-photo.jpeg" alt="Gallery"/></div>
+    <div><img src="https://i.pinimg.com/736x/c6/f1/02/c6f102b9cce43ce7dce74e4e93eca697.jpg" alt="Gallery"/></div>
+    <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmLPRXbjnjdc5rkkZ16-pwFZlf3ikqy_9SKOgbqblaIoDFZX3Uo6tBF7kEKH4XQyQarY4&usqp=CAU" alt="Gallery"/></div>
+    <div><img src="https://static.vecteezy.com/system/resources/thumbnails/035/426/750/small_2x/ai-generated-explore-the-intricate-symbiotic-relationship-between-the-absolute-green-tree-nature-background-and-the-colorful-birds-that-inhabit-it-photo.jpg" alt="Gallery"/></div>
+    <div><img src="https://wallpaperswide.com/download/nature_birds-wallpaper-960x640.jpg" alt="Gallery"/></div>
+    <div><img src="https://img.freepik.com/premium-photo/beautiful-bird-sits-branch-lush-rainforest-bird-is-surrounded-by-colorful-flowers-green-leaves_36682-34025.jpg" alt="Gallery"/></div>
+  </div>
+</body>
+</html>

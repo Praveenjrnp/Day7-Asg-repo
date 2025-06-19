@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Meet the Team - Flexbox</title>
+  <style>
+    .team-container {
+      width: 1000px;
+      margin: 50px auto;
+      display: flex;
+      justify-content: space-between;
+    }
+    .card {
+      width: 220px;
+      padding: 15px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+      text-align: center;
+      transition: box-shadow 0.3s;
+    }
+    .card:hover {
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    .card img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+    .card h3 {
+      margin: 10px 0 5px;
+    }
+    .card p {
+      font-size: 14px;
+      color: #444;
+    }
+  </style>
+</head>
+<body>
+  <div class="team-container">
+    <div class="card">
+      <img src="https://media.licdn.com/dms/image/v2/D4D03AQEZof3z_oaVNw/profile-displayphoto-shrink_200_200/B4DZVyVBl8HAAY-/0/1741379870199?e=1755734400&v=beta&t=qyM9RgxYpkmAkscyXQPSAPBVJQMRtpT-jM4smPal4Iw" alt="Team Member"/>
+      <h3>Praveen Kumar Chaurasia</h3>
+      <p>Frontend & Database Developer</p>
+      <p>Enjoys working with databases and writing clean, efficient code.</p>
+    </div>
+    <div class="card">
+      <img src="https://media.licdn.com/dms/image/v2/D5603AQHOq-wDJgkdJw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1725085239429?e=1755734400&v=beta&t=aMcbnCginl1T0ufM9dsdu3wTWMLKr7onjyxkUdECv6Q" alt="Team Member"/>
+      <h3>Hemant Kumar</h3>
+      <p>Backend & Frontend Developer</p>
+      <p>Enjoys working with databases and writing clean, efficient code.</p>
+    </div>
+    <div class="card">
+      <img src="https://media.licdn.com/dms/image/v2/D4E03AQGtXESI6Ti7Gw/profile-displayphoto-shrink_200_200/B4EZVLtTsqHUAY-/0/1740731924092?e=1755734400&v=beta&t=VLer43sUg6PGO3CG6D2L3Kygt-b_pQb__LtxKgiFy5Y" alt="Team Member"/>
+      <h3>Satyam Rajput</h3>
+      <p>Frontend Developer</p>
+      <p>Focuses on user-centered design and improving usability in interfaces.</p>
+    </div>
+    <div class="card">
+      <img src="https://media.licdn.com/dms/image/v2/D4D03AQG_n2oRJ1D_0A/profile-displayphoto-scale_200_200/B4DZeGoeeTH4AY-/0/1750310449006?e=1755734400&v=beta&t=z442A9gKJZCogP-1Lu-fjDiS8eMVMCLv3pwsKAIXgLo" alt="Team Member"/>
+      <h3>Ankit Verma</h3>
+      <p>Backend & Frontend Developer</p>
+      <p>Keeps everything on track and ensures timely delivery of projects.</p>
+    </div>
+    <!-- <div class="card">
+      <img src="https://media.licdn.com/dms/image/v2/D5635AQH34JDHZsZvZQ/profile-framedphoto-shrink_200_200/profile-framedphoto-shrink_200_200/0/1736906583085?e=1750921200&v=beta&t=jaf3ldYMSRkPf5-JuJBOgVoojDsQZ_qV1ZltHoNtsTo"/>
+      <h3>Sumit Kaushik</h3>
+      <p>Frontend Developer</p>
+      <p>Keeps everything on track and ensures timely delivery of projects.</p>
+    </div> -->
+  </div>
+</body>
+</html>
