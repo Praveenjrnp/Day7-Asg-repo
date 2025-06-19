@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 100px 300px 100px;
+    grid-template-areas:
+        "header header header header"
+        "sidebar content content content"
+        "footer footer footer footer";
+    gap: 10px;
+    height: 100vh;
+    padding: 10px;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 24px;
+    background-color: #444;
+}
+
+.item-1 {
+    grid-area: header;
+    background-color: #1abc9c;
+}
+
+.item-2 {
+    grid-area: content;
+    background-image: url('./images/gta5.jpeg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.item-3 {
+    grid-area: sidebar;
+    background-image: url('./images/pubg.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+
+.item-4 {
+    grid-area: footer;
+    background-image: url('./images/cod.jpeg');
+    background-size: cover;
+    background-position: center;
+}
